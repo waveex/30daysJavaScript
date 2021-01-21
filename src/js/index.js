@@ -6,4 +6,9 @@ import '../scss/main.scss';
 
 /* place your code below */
 
-console.log('HELLO 🚀')
+window.addEventListener('keydown' , function(e)  {
+const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
+if(!audio) return; //stop playing all together
+audio.play()
+
+})
