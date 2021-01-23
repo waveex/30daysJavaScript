@@ -1,13 +1,80 @@
 @import "~normalize.css";
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,600;1,400;1,600&display=swap');
 @import "_variables";
 @import "modules/drums.scss";
 
-body {
+html {
+font-size: 16px;
+font-family: 'Roboto Mono', monospace;
+background: #727072;
+}
 
-  color: #fff;
+
+.body{
   display: flex;
-  align-items: center;
+  max-width:100%;
+  flex-direction: column;
+}
+.hello{
+  color:#D2D6EF;
+  display: flex;
   justify-content: center;
-  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  &__header{
+    font-size: 5rem;
+    margin-bottom: 20px;
+  }
+  &__description{
+  font-size: 1.5rem;
+  font-weight:400;
+  line-height: 3rem;
+  }
+  &__special{
+    color:#D74E09;
+    text-decoration: none;
+    font-weight: 800;
+
+
+    &:hover{
+      color: red;
+    }
+  }
+}
+.task{
+margin:10px;
+border-radius: 1rem;
+background: #F0F4EF;
+&__header{
+text-align: center;
+}
+}
+.tasks{
+  display: grid ;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+   &__day{
+     display: flex;
+     justify-content: center;
+     align-content: center;
+     flex-direction: column;
+     text-align: center;
+     height: 200px;
+     width: 200px;
+     border-radius: .5rem;
+     &--link{
+       text-decoration: none;
+       color:#14080E;
+       font-size: 1.5rem;
+       text-shadow: #fff 2px 0 10px;
+       font-weight: 600;
+       line-height: 2rem;
+     }
+     &--1{
+       width: 100%;
+       height: 100%;
+       background:url(../../src/assets/img/background.jpg);
+     }
+   }
 }
