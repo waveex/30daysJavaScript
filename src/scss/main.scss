@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,600;1,400;1,600&display=swap');
 @import "_variables";
 @import "modules/drums.scss";
+@import "modules/clock.scss";
 
 html {
 font-size: 16px;
@@ -52,8 +53,8 @@ text-align: center;
 }
 .tasks{
   display: grid ;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
    &__day{
      display: flex;
      justify-content: center;
