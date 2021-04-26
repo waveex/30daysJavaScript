@@ -6,7 +6,8 @@ module.exports = {
   entry: {
     index: "./src/js/index.js",
     drums: "./src/js/drums.js",
-    clock: "./src/js/clock.js"
+    clock: "./src/js/clock.js",
+    variables: "./src/js/variables.js"
   },
   output: {
     filename: "[name].[hash:8].js",
@@ -94,6 +95,12 @@ module.exports = {
       inject: true,
       chunks: ["index", "clock"],
       filename: "clock.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/pages/variables.html",
+      inject: true,
+      chunks: ["index", "variables"],
+      filename: "variables.html",
     }),
   ],
 };

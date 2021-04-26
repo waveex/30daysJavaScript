@@ -3,6 +3,7 @@
 @import "_variables";
 @import "modules/drums.scss";
 @import "modules/clock.scss";
+@import "modules/variables.scss";
 
 html {
 font-size: 16px;
@@ -78,4 +79,15 @@ text-align: center;
        background:url(../../src/assets/img/background.jpg);
      }
    }
+}
+.goback{
+  background: rgb(128,128,128,0.8);
+  position: fixed;
+  font-size: 2rem;
+  right: 20px;
+  border-radius: 0.1rem;
+  bottom: 333px;
+  padding: 2px;
+  text-decoration: none;
+  color: coral;
 }

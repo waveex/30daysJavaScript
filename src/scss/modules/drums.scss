@@ -1,6 +1,6 @@
-html {
-  font-size: 10px;
-  background: url('../assets/img/background.jpg') bottom center;
+.body__drums {
+  font-size: 16px;
+  background: url('../assets/img/background.jpg') bottom center !important;
   background-size: cover;
 }
 
@@ -48,4 +48,15 @@ kbd {
   text-transform: uppercase;
   letter-spacing: .1rem;
   color: #ffc600;
+}
+.goback{
+  background: rgb(128,128,128,0.8);
+  position: absolute;
+  font-size: 10rem;
+  right: 20px;
+  border-radius: 0.1rem;
+  bottom: 10px;
+  padding: 2px;
+  text-decoration: none;
+  color: coral;
 }
